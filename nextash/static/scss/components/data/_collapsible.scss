@@ -1,0 +1,80 @@
+.collapsible {
+  margin-bottom: 2rem;
+
+  .collapse-item {
+    border: 2px dotted var(--border);
+    position: relative;
+    user-select: none;
+    margin-bottom: 5px;
+    border-radius: var(--rounded);
+    background-color: var(--dark);
+    backdrop-filter: blur(20px);
+    .collapse-head {
+      padding: 20px;
+      cursor: pointer;
+      font-weight: 500;
+      color: var(--text);
+      font-size: 20px;
+      padding-right: 3rem;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      width: 100%;
+      text-align: left;
+
+      &::after {
+        content: "\ebc1";
+        font-family: "icons";
+        font-size: 1.8rem;
+        transition: 0.5s transform;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-weight: normal;
+      }
+    }
+
+    .collapse-body {
+      padding: 20px;
+      display: none;
+      color: var(--text);
+      font-size: 16px;
+      line-height: 28px;
+    }
+
+    &.active {
+      border-color: var(--primary);
+      transition: transform 0.5s ease-in-out;
+
+      .collapse-head {
+        color: var(--primary);
+        padding-bottom: 0;
+
+        &::after {
+          content: "\eb8d";
+          transform: rotate(-180deg);
+          color: var(--primary);
+        }
+      }
+
+      .collapse-body {
+        display: block;
+        div{
+            margin-bottom: 20px;
+        }
+        h3 {
+          font-size: 20px;
+          font-weight: 600;
+        }
+        h4 {
+          font-size: 18px;
+          font-weight: 500;
+        }
+        p {
+          font-size: 18px;
+          color: var(--muted);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.clients {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  .col {
+    text-align: center;
+    img {
+      max-width: 100%;
+      mix-blend-mode: lighten;
+      max-height: 100px;
+      margin: auto;
+    }
+  }
+}

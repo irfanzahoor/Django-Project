@@ -1,0 +1,34 @@
+.bg-one {
+  background-image: url(#{static("images","bg-swirl-1.webp")});
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bg-two {
+  background-image: url(#{static("images","bg-swirl-2.webp")});
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bg-three {
+  background-image: url(#{static("images","bg-swirl-3.webp")});
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bg-four {
+  background-image: url(#{static("images","bg-swirl-4.webp")});
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bg-five {
+  background-image: url(#{static("images","bg-swirl-5.webp")});
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-fixed {
+  background-attachment: fixed;
+}

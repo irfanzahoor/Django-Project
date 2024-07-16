@@ -1,0 +1,131 @@
+.sidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 98;
+  background-color: var(--body);
+  box-shadow: var(--shadow);
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: none;
+
+  .boxed {
+    height: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    .menus-row {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+      margin: auto;
+      .col-left {
+        width: 50%;
+        @media (max-width: screen-size(lg)) {
+          width: 50%;
+        }
+        @media (max-width: screen-size(sm)) {
+          width: 100%;
+          padding-top: 80px;
+          padding-bottom: 60px;
+        }
+      }
+      .col-right {
+        width: 50%;
+        @media (max-width: screen-size(lg)) {
+          width: 40%;
+        }
+        @media (max-width: screen-size(sm)) {
+          width: 100%;
+          padding-bottom: 60px;
+        }
+      }
+    }
+  }
+
+  .heading {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  .policies-list {
+    margin-bottom: 20px;
+    .list-item {
+      margin-bottom: 5px;
+      .list-link {
+        color: var(--muted);
+        font-size: 1.1rem;
+
+        &:hover {
+          color: var(--text);
+          text-decoration: underline;
+          text-decoration-color: var(--primary);
+        }
+      }
+    }
+  }
+  .menu-list {
+    counter-reset: menu;
+    .list-item {
+      display: flex;
+      align-items: center;
+
+      .icon {
+        font-size: 1.5rem;
+        transform: rotate(-50deg);
+        margin-left: 10px;
+        border: 2px solid var(--muted);
+        border-radius: 50px;
+        color: var(--muted);
+        transition: color 1s;
+      }
+      &:hover {
+        .icon {
+          color: var(--text);
+        }
+      }
+
+      .list-link {
+        font-size: clamp(18px, 50vw, 40px);
+        color: transparent;
+        -webkit-text-stroke: 0.8px var(--muted);
+        transition: color 1s, text-decoration 0.5s;
+
+        &:hover {
+          color: var(--text);
+          text-decoration: underline;
+          text-decoration-color: var(--primary);
+        }
+      }
+
+      &::before {
+        margin-right: 10px;
+        color: var(--muted);
+        font-size: 20px;
+        counter-increment: menu;
+        content: "0" counter(menu) " \27F6 ";
+      }
+    }
+  }
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-right: solid 5px #1d1f20;
+    background: #5f5f5f;
+  }
+
+  &::-webkit-scrollbar-track {
+    border: none;
+    background: #1d1f20;
+  }
+
+  &.active {
+    display: block;
+  }
+}

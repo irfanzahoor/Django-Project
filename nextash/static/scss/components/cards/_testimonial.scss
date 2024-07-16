@@ -1,0 +1,21 @@
+.card-testimonial {
+  --card-image-w: 80px;
+  --card-image-h: 80px;
+  --card-image-m: 20px auto;
+  --card-title-c: var(--text);
+  --card-title-fs: 1.3rem;
+  --card-title-fw: 500;
+  --card-title-m: 5px;
+  --card-subtitle-c: var(--muted);
+  --card-subtitle-fw: 400;
+  --card-subtitle-m: 45px;
+  --card-desc-c: var(--text);
+  --card-desc-s: clamp(12px, 80vw, 22px);
+  --card-body-m: 3.5rem 2rem;
+  text-align: center;
+
+  .card-image {
+    padding: 3px;
+    border: 2px solid var(--primary);
+  }
+}

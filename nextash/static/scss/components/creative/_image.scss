@@ -1,0 +1,85 @@
+.image-box {
+  position: relative;
+
+  .square-1,
+  .square-2 {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    z-index: -1;
+    background-position: 50% 50%;
+    background-size: 0.5rem 0.5rem;
+  }
+
+  .square-1 {
+    left: 0px;
+    top: 0px;
+    margin-left: -20px;
+    margin-top: -20px;
+    background-image: radial-gradient(var(--light) 1px, transparent 1px);
+  }
+  .square-2 {
+    right: 0px;
+    bottom: 0px;
+    margin-right: -20px;
+    margin-bottom: -20px;
+    background-image: radial-gradient(var(--primary) 1px, transparent 1px);
+  }
+
+  .image-lg {
+    z-index: 10;
+    height: 500px;
+    padding: 10px;
+    backdrop-filter: var(--blur);
+    border: 2px solid var(--primary);
+  }
+  .image-sm {
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-bottom: -70px;
+    margin-left: -20px;
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+    backdrop-filter: var(--blur);
+    border: 2px solid var(--primary);
+
+    @media (max-width: screen-size(lg)) {
+      $size: 200px;
+      margin-bottom: -60px;
+      margin-left: 50px;
+      width: $size;
+      height: $size;
+    }
+
+    @media (max-width: screen-size(sm)) {
+      $size: 100px;
+      margin-bottom: -50px;
+      margin-left: 20px;
+      width: 140px;
+      height: 180px;
+    }
+  }
+
+  img {
+    transition: all, 1s;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: inherit;
+    box-shadow: rgba(255, 30, 0, 0.24) 0px 8px 24px,
+      rgba(255, 38, 0, 0.158) 0px 16px 56px,
+      rgba(235, 6, 25, 0.233) 0px 24px 80px;
+  }
+
+  @media (max-width: screen-size(xl)) {
+    margin-bottom: 10rem;
+  }
+
+  @media (max-width: screen-size(sm)) {
+    margin-bottom: 7rem;
+  }
+}

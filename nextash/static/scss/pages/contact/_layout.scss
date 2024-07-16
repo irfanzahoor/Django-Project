@@ -1,0 +1,25 @@
+.contact-layout {
+  margin-bottom: 100px;
+  .boxed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    .col-left {
+      width: 45%;
+      .media {
+        margin-bottom: 20px;
+      }
+      @media (max-width: screen-size(lg)) {
+        width: 100%;
+        margin-bottom: 100px;
+      }
+    }
+    .col-right {
+      width: 45%;
+      @media (max-width: screen-size(lg)) {
+        width: 100%;
+      }
+    }
+  }
+}

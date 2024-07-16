@@ -1,0 +1,9 @@
+.filters {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-bottom: 3rem;
+  gap: 20px;
+  @media (max-width: screen-size(sm)) {
+    grid-template-columns: auto;
+  }
+}

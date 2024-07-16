@@ -1,0 +1,13 @@
+.order-first {
+  order: 1;
+  @media (max-width: screen-size(md)) {
+    order: -1;
+  }
+}
+
+.order-second {
+  order: -1;
+  @media (max-width: screen-size(md)) {
+    order: -1;
+  }
+}

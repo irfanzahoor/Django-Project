@@ -1,0 +1,41 @@
+@mixin create-utils($data) {
+  @each $size, $classes in $data {
+    @if $size==default {
+      @each $class, $properties in $classes {
+        #{$class} {
+          @each $property, $value in $properties {
+            #{$property}: $value;
+          }
+        }
+      }
+    }
+
+    $breakpointSize: if(
+      map-has-key($classes, size),
+      map-get($classes, size),
+      screen-size($size)
+    );
+
+    $breakpointScale: if(
+      map-has-key($classes, scale),
+      map-get($classes, scale),
+      max-width
+    );
+
+    $breakpointPrefix: if(map-has-key($classes, prefix), null, "-#{$size}");
+
+    @media ($breakpointScale: $breakpointSize) {
+      @if $size!=default {
+        @each $class, $properties in $classes {
+          @if $class != prefix or $class != scale $class != size {
+            #{$class}#{$breakpointPrefix} {
+              @each $property, $value in $properties {
+                #{$property}: $value;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

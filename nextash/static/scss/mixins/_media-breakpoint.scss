@@ -1,0 +1,7 @@
+@mixin media-breakpoint($size, $type: max-width) {
+  $bs: screen-size($size);
+
+  @media ($type: $bs) {
+    @content;
+  }
+}

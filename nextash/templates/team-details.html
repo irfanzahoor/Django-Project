@@ -1,0 +1,74 @@
+{% extends "base.html"%} 
+
+
+{% block content%}
+    <!-- HEADER -->
+    <section class="page-head">
+        <div class="boxed">
+            <span class="page-badge">Meet the Dream Team</span>
+            <h1 class="page-title">Uniting Brilliance, Passion, and Creativity!</h1>
+            <p class="page-desc">
+                - We’re a diverse team that works as fancies attention to details, enjoys beers on Friday nights
+                and
+                aspires to design the dent in the universe.
+            </p>
+        </div>
+    </section>
+    <!-- HEADER -->
+    <!-- CONTENT -->
+    <main class="boxed">
+        <section class="row-cols-2">
+            <div class="col" data-aos-duration="1000" data-aos="fade-right" data-aos-once="true"
+                data-aos-easing="ease-in-out">
+                <div class="image-box">
+                    <div class="square-1"></div>
+                    <div class="square-2"></div>
+                    <div class="image-lg card card-hover">
+                        <img data-src="/static/images/1.webp" class="image team-avatar lazy-load">
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos-duration="1000" data-aos="fade-left" data-aos-once="true"
+                data-aos-easing="ease-in-out">
+                <b class="section-badge"> Web developer</b>
+                <h3 class="section-title">Abdul Hannan</h3>
+                <p class="section-desc">Lorem ipsum dolor, sit amet
+                    consectetur adipisicing elit. Accusamus,
+                    porro corrupti! Rem in maxime provident, quidem eligendi soluta vero temporibus sed saepe
+                    dicta
+                    ea, mollitia, quibusdam repudiandae quo doloremque distinctio.</p>
+                <h4 class="section-subtitle">Highlighted skills:</h4>
+                <div class="badges-group">
+                    <a href="" class="badge">HTML 5</a>
+                    <a href="" class="badge">CSS 3</a>
+                    <a href="" class="badge">SCSS</a>
+                    <a href="" class="badge">JAVASCRIPT</a>
+                    <a href="" class="badge">JQuery</a>
+                    <a href="" class="badge">Bootstrap 5</a>
+                    <a href="" class="badge">Uikit</a>
+                </div>
+                <br> <br>
+                <h4 class="section-subtitle">Follow us</h4>
+                <div class="social-links">
+                    <a href="#" class="bx bxl-facebook-square social-icon"></a>
+                    <a href="#" class="bx bxl-twitter social-icon"></a>
+                    <a href="#" class="bx bxl-google social-icon"></a>
+                    <a href="#" class="bx bxl-instagram social-icon"></a>
+                    <a href="#" class="bx bxl-github social-icon"></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- CONTENT -->
+    <!-- CTA -->
+    <section class="boxed card card-cta bg-one">
+        <div class="card-body">
+            <h3 class="card-title">Lets get started!</h3>
+            <p class="card-desc">
+                Interested in working with us? Have any questions?
+            </p>
+            <a href="contact-us.html" class="btn-contact">Contact us</a>
+        </div>
+    </section>
+    <!-- CTA -->
+{% endblock %}

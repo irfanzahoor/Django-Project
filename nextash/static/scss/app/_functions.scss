@@ -1,0 +1,45 @@
+@function screen-size($size) {
+  $breakpoints: map-get(
+    $map: $config,
+    $key: breakpoints,
+  );
+  @return map-get($breakpoints, $size);
+}
+
+@function assets($name, $path) {
+  $paths: map-get(
+    $map: $config,
+    $key: assets,
+  );
+
+  @return map-get($paths, $name) + $path;
+}
+
+@function get-rgb($color) {
+  @return red($color), green($color), blue($color);
+}
+
+@function get-color($color, $type: null, $mode: light) {
+  $colors: map-get(
+    $map: $config,
+    $key: colors,
+  );
+  $_colors: if($mode == light, map-get($colors, light), map-get($colors, dark));
+  $_color: map-get($_colors, $color);
+
+  @if $type == null {
+    @return $_color;
+  } @else if($type == disable) {
+    @return rgba(red($_color), green($_color), blue($_color), 0.5);
+  } @else if($type == focus) {
+    @return darken($_color, 0.2);
+  } @else if($type == lighten) {
+    @return lighten($_color, 10);
+  } @else if($type == darken) {
+    @return darken($_color, 10);
+  } @else if($type == subtle) {
+    @return lighten($_color, 36);
+  } @else if($type == rgb) {
+    @return red($_color), green($_color), blue($_color);
+  }
+}

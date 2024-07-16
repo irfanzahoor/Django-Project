@@ -1,0 +1,28 @@
+.card-error {
+  --card-p: 100px auto;
+  --card-bc: transparent;
+  --card-bs: transparent;
+  --card-bg: transparent;
+  --card-title-fs: clamp(40px, 80vw, 150px);
+  --card-title-fw: normal;
+  --card-title-m: clamp(60px, 80vw, 100px);
+  --card-subtitle-fs: clamp(24px, 80vw, 30px);
+  --card-subtitle-fw: 600;
+  --card-subtitle-m: clamp(15px, 80vw, 25px);
+  --card-desc-size: clamp(16px, 80vw, 20px);
+  --card-desc-m: clamp(15px, 80vw, 25px);
+  --card-bg: transparent;
+  --card-b: blur(0px);
+  --card-h: auto;
+  --card-body-h: auto;
+  text-align: center;
+  align-items: center;
+  width: clamp(270px, 80vw, 560px);
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  .card-title {
+    color: transparent;
+    -webkit-text-stroke: 3px var(--primary);
+  }
+}

@@ -1,0 +1,35 @@
+.who-we-are {
+  .row {
+    align-items: center;
+  }
+  .logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .image {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+    .square {
+      width: 320px;
+      height: 320px;
+      transition-property: transform;
+      transition-duration: 1s;
+      border: 2px solid var(--primary);
+      position: absolute;
+      box-shadow: rgba(238, 40, 14, 0.1) 0px 8px 24px,
+        rgba(211, 38, 7, 0.1) 0px 16px 56px,
+        rgba(235, 6, 25, 0.233) 0px 24px 80px;
+    }
+    &:hover {
+      .square {
+        transform: rotate(-90deg);
+        box-shadow: rgba(238, 40, 14, 0.2) 0px 8px 24px,
+          rgba(211, 38, 7, 0.2) 0px 16px 56px,
+          rgba(235, 6, 25, 0.3) 0px 24px 80px;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.carousel {
+  position: relative;
+  border-radius: var(--rounded);
+
+  .swiper-wrapper {
+    .swiper-slide {
+      padding: 1rem;
+
+      &.slide-no-gap {
+        padding: 0;
+      }
+    }
+  }
+
+  .slide-prev,
+  .slide-next {
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    background-color: var(--primary);
+    &:hover {
+      background-color: var(--dark);
+    }
+  }
+
+  .slide-next {
+    right: 10px;
+
+    @media (max-width: screen-size(lg)) {
+      right: 0;
+    }
+  }
+
+  .slide-prev {
+    left: 10px;
+
+    @media (max-width: screen-size(lg)) {
+      left: 0;
+    }
+  }
+}

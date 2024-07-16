@@ -1,0 +1,66 @@
+.connect {
+  position: fixed;
+  right: 15px;
+  bottom: 20px;
+  z-index: 99999;
+
+  .connect-btn {
+    background-color: var(--primary);
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem;
+    box-shadow: var(--shadow);
+    pointer-events: all;
+    &:hover {
+      background-color: var(--primary-hover);
+    }
+  }
+
+  input[type="checkbox"] {
+    height: 0;
+    width: 0;
+    display: none;
+  }
+  label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50rem;
+      cursor: pointer;
+    }
+  }
+
+  .connect-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    transition: 0.3s;
+    opacity: 0;
+    .connect-item {
+      background-color: #f5f5f5;
+      color: #061329;
+      font-size: 1.5rem;
+      padding: 1rem;
+      transition: 0.3s;
+      box-shadow: var(--shadow);
+      display: inline-block;
+      text-decoration: none;
+      border-radius: 50px;
+      &:hover {
+        cursor: pointer;
+        background-color: rgb(200, 200, 200);
+      }
+    }
+  }
+}
+
+.connect input:checked + label .connect-items {
+  opacity: 1;
+  transform: translateY(0);
+}

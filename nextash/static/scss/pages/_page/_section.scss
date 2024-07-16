@@ -1,0 +1,117 @@
+.section-title,
+.section-subtitle,
+.section-desc,
+.section-badge {
+  margin-bottom: 15px;
+}
+
+.section-title,
+.section-title > * {
+  font-weight: 600;
+  font-size: clamp(30px, 80vw, 40px);
+  color: var(--text);
+}
+
+.section-subtitle,
+.section-subtitle > * {
+  font-weight: 500;
+  font-size: clamp(16px, 80vw, 22px);
+  color: var(--text);
+  line-height: 1.8rem;
+}
+
+.section-desc,
+.section-desc > * {
+  font-weight: 400;
+  font-size: clamp(14px, 80vw, 16px);
+  line-height: clamp(20px, 80vw, 26px);
+  color: var(--muted);
+}
+
+.section-badge {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  font-size: 0.9rem;
+  text-decoration: none;
+
+  &::before {
+    margin-right: 5px;
+    content: "{";
+    color: var(--primary);
+    font-size: 1.5rem;
+  }
+  &::after {
+    margin-left: 5px;
+    content: "}";
+    color: var(--primary);
+    font-size: 1.5rem;
+  }
+}
+
+.section-image {
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.section-see-more {
+  float: right;
+  margin-top: 50px;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+
+  &:after {
+    font-family: "icons";
+    content: "\ebe6";
+    font-size: 20px;
+    margin-left: 5px;
+    font-weight: normal;
+    position: relative;
+    top: 3px;
+  }
+
+  &:hover {
+    color: var(--text);
+  }
+}
+
+.section-divider {
+  color: var(--text);
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.section-divider::before,
+.section-divider::after {
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 1px;
+  background-color: var(--border);
+  position: relative;
+  transform: translateY(-3px);
+}
+
+.section-divider::before {
+  margin-right: 0.5rem;
+}
+
+.section-divider::after {
+  margin-left: 0.5rem;
+}
+
+.section-center {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: clamp(330px, 80vw, 800px);
+}

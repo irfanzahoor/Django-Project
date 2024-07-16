@@ -1,0 +1,54 @@
+.btn {
+  border: none;
+  outline: none;
+  color: var(--text);
+  background-color: var(--body);
+  cursor: pointer;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: var(--rounded);
+  box-shadow: var(--shadow);
+}
+
+.btn-outline {
+  --b: 2px; /* border thickness */
+  --s: 0.45em; /* size of the corner */
+  padding: calc(0.8em + var(--s)) calc(1.6em + var(--s));
+  color: var(--text);
+  --_p: var(--s);
+  background: conic-gradient(
+      from 90deg at var(--b) var(--b),
+      #0000 90deg,
+      var(--primary) 0
+    )
+    var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+    calc(100% - var(--b) - 2 * var(--_p));
+  transition: 0.3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: 0.6em;
+  font-size: 14px;
+  border: 0;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  cursor: pointer;
+  position: relative;
+  z-index: 100;
+
+  &:hover,
+  &:focus-visible {
+    --_p: 0px;
+    --b: 1px;
+    outline-color: var(--primary);
+    outline-offset: 0.05em;
+    color: var(--primary);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px) !important;
+  }
+
+  &:active {
+    background: var(--primary);
+    color: var(--text);
+  }
+}

@@ -1,0 +1,41 @@
+.loading-page {
+    background: var(--body);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease-out;
+}
+
+.loading-page .counter {
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+.loading-page .counter .count {
+    font-size: 40px;
+    font-weight: 100;
+    color: var(--text);
+}
+
+.loading-page .counter .text {
+    color: var(--text);
+    font-size: 5rem;
+    margin-top: -10px;
+}
+
+.loading-page .counter .load-progress {
+    background: var(--primary);
+    border: none;
+    height: 2px;
+    box-shadow: rgba(255, 30, 0, 0.24) 0px 8px 24px,
+        rgba(255, 38, 0, 0.158) 0px 16px 56px,
+        rgba(235, 6, 25, 0.233) 0px 24px 80px;
+}

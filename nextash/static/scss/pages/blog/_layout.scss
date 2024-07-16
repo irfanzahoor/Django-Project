@@ -1,0 +1,8 @@
+.blog {
+  --box-width: 90%;
+  width: clamp(300px, 80vw, 1000px);
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  z-index: 10;
+}

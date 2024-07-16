@@ -1,0 +1,89 @@
+.content {
+  .dotted-square {
+    position: relative;
+
+    &::before {
+      z-index: -1;
+      background-image: radial-gradient(
+        var(--primary) 1.5px,
+        transparent 1.5px
+      );
+      background-position: 50% 50%;
+      background-size: 0.5rem 0.5rem;
+      position: absolute;
+      margin-left: -14px;
+      left: 0px;
+      bottom: 7px;
+      width: 40px;
+      height: 40px;
+      content: "";
+      border-radius: 10px;
+    }
+  }
+
+  * {
+    color: var(--text);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 600;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 2.4rem;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 2.2rem;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+  h4 {
+    font-size: 1.6rem;
+  }
+  h5 {
+    font-size: 1.4rem;
+  }
+  h6 {
+    font-size: 1.1rem;
+  }
+
+  p,
+  li {
+    margin-bottom: 1rem;
+    color: var(--muted);
+    line-height: 2rem;
+    font-size: 1.2rem;
+  }
+
+  ul {
+    margin-bottom: 20px;
+    list-simpletyle-position: inside;
+  }
+  a {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &.dropcap {
+    &::first-letter {
+      font-size: 2em;
+      font-weight: bold;
+      margin-right: 4px;
+      color: var(--primary);
+    }
+  }
+}

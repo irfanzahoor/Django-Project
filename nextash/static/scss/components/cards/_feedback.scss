@@ -1,0 +1,38 @@
+.card-feedback {
+  --card-image-w: 100px;
+  --card-image-h: 100px;
+  --card-head-space: 0;
+  --card-body-space: 0 1.5rem;
+  --card-foot-space: 1.5rem;
+  --card-title-c: var(--text);
+  --card-title-fs: 1.3rem;
+  --card-title-fw: 500;
+  --card-title-space: 5px;
+  --card-subtitle-c: var(--muted);
+  --card-subtitle-fw: 400;
+  --card-desc-color: var(--text);
+  --card-desc-size: clamp(12px, 80vw, 18px);
+  --card-body-space: 3.5rem 2rem;
+  --card-b: blur(20px);
+  text-align: center;
+
+  .card-image {
+    margin-top: -50px;
+    padding: 5px;
+    border: 3px dashed var(--primary);
+  }
+  .card-body {
+    .bx {
+      font-size: 40px;
+      color: var(--primary);
+    }
+  }
+
+  .card-foot {
+    color: #ffc107;
+  }
+  .card-desc {
+    text-align: justify;
+    text-justify:inter-ideograph;
+  }
+}

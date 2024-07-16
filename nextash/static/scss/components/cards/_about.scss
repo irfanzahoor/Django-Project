@@ -1,0 +1,9 @@
+.card-about {
+  --card-body-space: 3rem 1rem;
+  --card-title-fs: clamp(30px, 80vw, 40px);
+  text-align: center;
+  .card-body {
+    width: clamp(300px, 80vw, 900px);
+    margin: auto;
+  }
+}

@@ -1,0 +1,29 @@
+.card-team {
+  --card-body-h: auto;
+  --card-image-w: 180px;
+  --card-image-h: 180px;
+  --card-image-br: 50%;
+  text-align: center;
+  .card-image {
+    overflow: hidden;
+    background-color: var(--dark);
+    margin: 20px auto 0px auto;
+    padding: 1rem;
+    border-left: 3px solid var(--primary);
+    border-right: 3px solid var(--primary);
+  }
+}
+
+.card-ceo {
+  --card-image-w: 70%;
+  --card-image-h: 70%;
+  --card-w: clamp(320px, 80vw, 1200px);
+  flex-direction: row;
+  align-items: center;
+  @media (max-width: screen-size(sm)) {
+    flex-direction: column;
+  }
+  .card-body {
+    text-align: left;
+  }
+}

@@ -1,0 +1,45 @@
+.accordion {
+  counter-reset: accordion;
+  margin-bottom: 40px;
+  .item {
+    border: 1px solid var(--border);
+    border-radius: var(--rounded);
+    padding: 5px;
+    margin-bottom: 8px;
+    backdrop-filter: blur(30px);
+    .head {
+      padding: 10px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: clamp(14px, 80vw, 16px);
+      line-height: clamp(20px, 80vw, 24px);
+      color: var(--text);
+      &::before {
+        margin-right: 10px;
+        color: var(--primary);
+        font-size: 1.1rem;
+        counter-increment: accordion;
+        content: counter(accordion) ". ";
+      }
+    }
+
+    .body {
+      padding: 10px;
+      display: none;
+      color: var(--muted);
+      font-size: clamp(14px, 80vw, 16px);
+      line-height: clamp(20px, 80vw, 24px);
+    }
+
+    &.active {
+      .head {
+        background-color: var(--dark);
+        border-radius: var(--rounded);
+      }
+
+      .body {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+:root {
+  --primary: #{get-color(primary)};
+  --primary-subtle: #{get-color(primary, subtle)};
+  --primary-hover: #{get-color(primary, lighten)};
+  --primary-focus: #{get-color(primary, focus)};
+  --primary-disable: #{get-color(primary, disable)};
+  --primary-rgb: #{get-color(primary, rgb)};
+  --warning: #{get-color(warning)};
+  --warning-subtle: #{get-color(warning, subtle)};
+  --warning-hover: #{get-color(warning, lighten)};
+  --warning-focus: #{get-color(warning, focus)};
+  --warning-disable: #{get-color(warning, disable)};
+  --warning-rgb: #{get-color(warning, rgb)};
+  --danger: #{get-color(danger)};
+  --danger-subtle: #{get-color(danger, subtle)};
+  --danger-hover: #{get-color(danger, lighten)};
+  --danger-focus: #{get-color(danger, focus)};
+  --danger-disable: #{get-color(danger, disable)};
+  --danger-rgb: #{get-color(danger, rgb)};
+  --success: #{get-color(success)};
+  --success-subtle: #{get-color(success, subtle)};
+  --success-hover: #{get-color(success, lighten)};
+  --success-focus: #{get-color(success, focus)};
+  --success-disable: #{get-color(success, disable)};
+  --success-rgb: #{get-color(success, rgb)};
+  --light: #{get-color(light)};
+  --light-subtle: #{get-color(light, subtle)};
+  --light-hover: #{get-color(light, lighten)};
+  --light-focus: #{get-color(light, focus)};
+  --light-disable: #{get-color(light, disable)};
+  --light-rgb: #{get-color(light, rgb)};
+  --dark: #{get-color(dark)};
+  --dark-subtle: #{get-color(dark, subtle)};
+  --dark-hover: #{get-color(dark, lighten)};
+  --dark-focus: #{get-color(dark, focus)};
+  --dark-disable: #{get-color(dark, disable)};
+  --dark-rgb: #{get-color(dark, rgb)};
+  --muted: #{get-color(muted)};
+  --body: #{get-color(body)};
+  --text: #{get-color(text)};
+  --border: #{get-color(border)};
+  --font-size: 1rem;
+  --shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  --shadow-lg: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --rounded: 10px;
+  --gap: 6.5rem;
+}

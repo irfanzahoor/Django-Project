@@ -1,0 +1,152 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+{%block title%}
+    <title>NexTash</title>
+    {% endblock%}
+    <link rel="shortcut icon" href="/static/images/logos/favicon.ico" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="canonical" href="blog-details.html" />
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/static/images/logos/logo.png" />
+    <meta property="og:url" content="URL_to_your_page" />
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="NexTash" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="/static/images/logos/logo.png" />
+    <meta name="twitter:site" content="@yourtwitterhandle" />
+    <meta name="twitter:creator" content="@authorhandle" />
+    <link rel="dns-prefetch" href="/nextash.com" />
+    <link rel="dns-prefetch" href="/wa.me" />
+    <link rel="dns-prefetch" href="/twitter.com" />
+    <link rel="dns-prefetch" href="/www.linkedin.com" />
+    <link rel="dns-prefetch" href="/www.facebook.com" />
+    <link rel="dns-prefetch" href="/www.instagram.com" />
+    <link rel="dns-prefetch" href="/www.google.com" />
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="apple-touch-icon" sizes="120x120" href="{% static 'images/apple-touch-icon.png'%}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon-32x32.png' %} " />
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon-16x16.png" />
+    <link rel="mask-icon" href="/static/images/safari-pinned-tab.svg" color="#ff0000" />
+    <meta name="msapplication-TileColor" content="#ff0000" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="{% static 'libs/swiper/swiper.min.css' %}">
+
+    {% comment %} <link rel="stylesheet" href="/static/libs/swiper/swiper.min.css" /> {% endcomment %}
+</head>
+
+<body>
+    <!-- LOADING SCREEN -->
+    <div class="loading-page">
+        <div class="counter">
+            <div class="count">0%</div>
+            <hr class="load-progress" />
+        </div>
+    </div>
+    <!-- LOADING SCREEN -->
+    <!-- LINES BG -->
+    <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <!-- LINES BG -->
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
+        <nav class="menu-items boxed">
+            <a href="index.html" class="logo">
+                <img src="/static/images/logos/logo.png" class="image" width="60" height="60" alt="NexTash Logo" />
+            </a>
+            <button type="button" class="menu-btn">
+                <span class="bar1"></span>
+                <span class="bar2"></span>
+            </button>
+        </nav>
+    </header>
+    <!-- NAVBAR -->
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+        <div class="boxed">
+            <div class="row-sidebar">
+                <div class="col">
+                    <h4 class="section-subtitle">Navigate</h4>
+                    <ul class="menu-list list" type="none">
+                        <li class="list-item">
+                            <a href="/about-us" class="list-link"> About </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="/services" class="list-link"> Services </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="/work" class="list-link"> Work </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="https://store.nextash.com/" class="list-link" target="_blank">
+                                Marketplace
+                            </a>
+                            <span class="bx bx-right-arrow-alt icon"></span>
+                        </li>
+                        <li class="list-item">
+                            <a href="/contact-us" class="list-link"> Contact </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="team.html" class="list-link"> Team </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="/careers" class="list-link"> Career </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="/blogs" class="list-link"> Blogs </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4 class="section-subtitle">Policies</h4>
+                    <ul class="list policies-list" type="none">
+                        <li class="list-item">
+                            <a href="terms-and-conditions.html" class="list-link">Terms And Conditions</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="privacy-policy.html" class="list-link">Privacy Policy</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="cookies-policy.html" class="list-link">Cookies Policy</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="refunds-policy.html" class="list-link">Refunds Policy</a>
+                        </li>
+                    </ul>
+                    <h4 class="section-subtitle">Follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/nextash" target="_blank"
+                            class="bx bxl-facebook-square social-icon"></a>
+                        <a href="https://www.pinterest.com/nextashinc" target="_blank"
+                            class="bx bxl-pinterest social-icon"></a>
+                        <a href="https://medium.com/@nextash" target="_blank" class="bx bxl-medium social-icon"></a>
+                        <a href="https://www.linkedin.com/company/nextash/" target="_blank"
+                            class="bx bxl-linkedin social-icon"></a>
+                        <a href="https://www.instagram.com/nextashinc/" target="_blank"
+                            class="bx bxl-instagram social-icon"></a>
+                        <a href="https://stackoverflow.com/users/19127111/nextash" target="_blank"
+                            class="bx bxl-stack-overflow social-icon"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!-- SIDEBAR -->

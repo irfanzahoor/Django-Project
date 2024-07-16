@@ -1,0 +1,32 @@
+{% extends "base.html"%} 
+
+{% block content%}
+    <!-- CONTENT -->
+    <main class="bg-three">
+        <section class="boxed">
+            <article class="card card-error">
+                <h1 class="card-title">404</h1>
+                <h2 class="card-subtitle">Page not found</h2>
+                <p class="card-desc">
+                    Oops! It seems like you've taken a wrong turn. The page you're looking for might have been moved,
+                    deleted, or it never existed in the first place.
+                </p>
+                <button class="btn-outline" onclick="window.history.back()">
+                    Go back
+                </button>
+            </article>
+        </section>
+    </main>
+    <!-- CONTENT -->
+    <!-- CTA -->
+    <section class="boxed card card-cta bg-one">
+        <div class="card-body">
+            <h3 class="card-title">Lets get started!</h3>
+            <p class="card-desc">
+                Interested in working with us? Have any questions?
+            </p>
+            <a href="contact-us.html" class="btn-contact">Contact us</a>
+        </div>
+    </section>
+    <!-- CTA -->
+   {% endblock %}

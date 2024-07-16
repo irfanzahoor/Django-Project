@@ -1,0 +1,22 @@
+.faqs-layout {
+  margin-bottom: 100px;
+  .boxed {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .col-left {
+      width: 50%;
+      @media (max-width: screen-size(sm)) {
+        width: 100%;
+      }
+    }
+    .col-right {
+      width: 45%;
+      align-self: flex-start;
+
+      @media (max-width: screen-size(sm)) {
+        width: 100%;
+      }
+    }
+  }
+}

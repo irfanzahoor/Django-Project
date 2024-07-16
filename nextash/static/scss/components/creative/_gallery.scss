@@ -1,0 +1,15 @@
+.image-card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  .image {
+    height: 100%;
+    margin-bottom: 40px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: inherit;
+    }
+  }
+}

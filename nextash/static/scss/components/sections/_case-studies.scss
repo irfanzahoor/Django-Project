@@ -1,0 +1,28 @@
+.case-studies {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  .section-center {
+    @media (max-width: screen-size(lg)) {
+      margin-bottom: 190px;
+    }
+    @media (max-width: screen-size(sm)) {
+      margin-bottom: 80px;
+    }
+  }
+
+  .card-case-study:nth-child(odd) {
+    .card-head {
+      order: 1;
+    }
+  }
+
+  @media (max-width: screen-size(lg)) {
+    .card-head {
+      order: 1;
+    }
+    .card-body {
+      order: 2;
+    }
+  }
+}
